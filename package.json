@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "news",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,16 +8,39 @@
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.42.4",
     "tslib": "^2.3.1",
-    "tsparticles": "^1.42.4"
+    "tsparticles": "^1.42.4",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.19.2",
+    "axios": "^0.26.1",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "echarts": "^5.3.1",
+    "html-to-draftjs": "^1.5.0",
+    "lodash": "^4.17.21",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "redux": "^4.1.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=8080 && react-scripts start",
+    "mock": "json-server-auth --watch ./src/mock/db.json --port=3000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-unused-vars": 0,
+      "no-cond-assign": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -30,5 +53,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
   }
 }
+

@@ -1,0 +1,611 @@
+{
+  "users": [
+    {
+      "email": "admin@qq.com",
+      "username": "admin",
+      "password": "$2a$10$CLbI4LbanAz.0vjkZm4ReuzZKMrQlXGe9qnx5izoPyi8dvtKkyjA.",
+      "default": true,
+      "region": "全球",
+      "roleState": true,
+      "roleId": 1,
+      "id": 1
+    },
+    {
+      "email": "daqiang@qq.com",
+      "password": "$2a$10$y/6F.ULO2LMbokQT7nKBpeVnmgG7yw9YYxkBz601Gf/FUbNXEO2cC",
+      "username": "daqiang",
+      "default": false,
+      "region": "非洲",
+      "roleState": true,
+      "roleId": 2,
+      "id": 3
+    },
+    {
+      "email": "xiaoming@qq.com",
+      "password": "$2a$10$gA3HSFiYZApJylvEuD9VZuXTybepuQmXKzUYwSMbxotsyCAVHBXVy",
+      "username": "xiaoming",
+      "default": false,
+      "region": "非洲",
+      "roleState": true,
+      "roleId": 3,
+      "id": 4
+    },
+    {
+      "email": "xiaohua@qq.com",
+      "password": "$2a$10$AQksx6TSP/9pQlEc7E0abe7sAUKNqcBIZyAdkKxlDXut4togJ2JCK",
+      "username": "xiaohua",
+      "default": false,
+      "region": "亚洲",
+      "roleState": true,
+      "roleId": 3,
+      "id": 5
+    },
+    {
+      "email": "xiaowen@qq.com",
+      "password": "$2a$10$3o5WcBJCc4EChWo6.rXMru18cUygC75S5.JKn1UVEPOJb/SHC8wsi",
+      "region": "欧洲",
+      "username": "xiaowen",
+      "default": false,
+      "roleState": true,
+      "roleId": 3,
+      "id": 6
+    },
+    {
+      "email": "damei@qq.com",
+      "password": "$2a$10$bkJyPQ3kRWKZRp5TYZrlSOfB1VRdKKyYwPn0ztTzht8joYMaH8M/a",
+      "region": "亚洲",
+      "username": "damei",
+      "default": false,
+      "roleState": true,
+      "roleId": 2,
+      "id": 8
+    },
+    {
+      "email": "dabai@qq.com",
+      "password": "$2a$10$gRtVmS3DA8oAdWA6EMN1Xu4Ncm1g6wmQGc0PJC91ZAxr4TIcM30vi",
+      "region": "欧洲",
+      "username": "dabai",
+      "default": false,
+      "roleState": true,
+      "roleId": 2,
+      "id": 9
+    }
+  ],
+  "rights": [
+    {
+      "title": "全球新闻管理",
+      "pagepermission": 1,
+      "key": "/index/oa",
+      "grade": 1,
+      "id": 1
+    },
+    {
+      "title": "用户管理",
+      "key": "/index/user-manage",
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 2
+    },
+    {
+      "title": "权限管理",
+      "key": "/index/right-manage",
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 7
+    },
+    {
+      "title": "新闻管理",
+      "key": "/index/news-manage",
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 14
+    },
+    {
+      "title": "审核管理",
+      "key": "/index/audit-manage",
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 21
+    },
+    {
+      "title": "发布管理",
+      "key": "/index/publish-manage",
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 24
+    }
+  ],
+  "children": [
+    {
+      "title": "首页",
+      "key": "/index/oa/home",
+      "rightId": 1,
+      "pagepermission": 1,
+      "grade": 1,
+      "id": 1
+    },
+    {
+      "title": "添加用户",
+      "key": "/index/user-manage/add",
+      "rightId": 2,
+      "grade": 2,
+      "id": 3
+    },
+    {
+      "title": "删除用户",
+      "key": "/index/user-manage/delete",
+      "rightId": 2,
+      "grade": 2,
+      "id": 4
+    },
+    {
+      "title": "修改用户",
+      "key": "/index/user-manage/update",
+      "rightId": 2,
+      "grade": 2,
+      "id": 5
+    },
+    {
+      "title": "用户列表",
+      "key": "/index/user-manage/list",
+      "pagepermission": 1,
+      "rightId": 2,
+      "grade": 2,
+      "id": 6
+    },
+    {
+      "title": "角色列表",
+      "key": "/index/right-manage/role/list",
+      "pagepermission": 1,
+      "rightId": 7,
+      "grade": 2,
+      "id": 8
+    },
+    {
+      "title": "权限列表",
+      "key": "/index/right-manage/right/list",
+      "pagepermission": 1,
+      "rightId": 7,
+      "grade": 2,
+      "id": 9
+    },
+    {
+      "title": "修改角色",
+      "key": "/index/right-manage/role/update",
+      "rightId": 7,
+      "grade": 2,
+      "id": 10
+    },
+    {
+      "title": "删除角色",
+      "key": "/index/right-manage/role/delete",
+      "rightId": 7,
+      "grade": 2,
+      "id": 11
+    },
+    {
+      "title": "修改权限",
+      "key": "/index/right-manage/right/update",
+      "rightId": 7,
+      "grade": 2,
+      "id": 12
+    },
+    {
+      "title": "删除权限",
+      "key": "/index/right-manage/right/delete",
+      "rightId": 7,
+      "grade": 2,
+      "id": 13
+    },
+    {
+      "title": "新闻列表",
+      "key": "/index/news-manage/list",
+      "rightId": 14,
+      "grade": 2,
+      "id": 15
+    },
+    {
+      "title": "撰写新闻",
+      "key": "/index/news-manage/add",
+      "pagepermission": 1,
+      "rightId": 14,
+      "grade": 2,
+      "id": 16
+    },
+    {
+      "title": "新闻更新",
+      "key": "/index/news-manage/update/:id",
+      "routepermission": 1,
+      "rightId": 14,
+      "grade": 2,
+      "id": 17
+    },
+    {
+      "title": "新闻预览",
+      "key": "/index/news-manage/preview/:id",
+      "routepermission": 1,
+      "rightId": 14,
+      "grade": 2,
+      "id": 18
+    },
+    {
+      "title": "草稿箱",
+      "key": "/index/news-manage/draft",
+      "pagepermission": 1,
+      "rightId": 14,
+      "grade": 2,
+      "id": 19
+    },
+    {
+      "title": "新闻分类",
+      "key": "/index/news-manage/category",
+      "pagepermission": 1,
+      "rightId": 14,
+      "grade": 2,
+      "id": 20
+    },
+    {
+      "title": "审核新闻",
+      "key": "/index/audit-manage/audit",
+      "pagepermission": 1,
+      "rightId": 21,
+      "grade": 2,
+      "id": 22
+    },
+    {
+      "title": "审核列表",
+      "key": "/index/audit-manage/list",
+      "pagepermission": 1,
+      "rightId": 21,
+      "grade": 2,
+      "id": 23
+    },
+    {
+      "title": "待发布",
+      "key": "/index/publish-manage/unpublished",
+      "pagepermission": 1,
+      "rightId": 24,
+      "grade": 2,
+      "id": 25
+    },
+    {
+      "title": "已发布",
+      "key": "/index/publish-manage/published",
+      "pagepermission": 1,
+      "rightId": 24,
+      "grade": 2,
+      "id": 26
+    },
+    {
+      "title": "已下线",
+      "key": "/index/publish-manage/sunset",
+      "pagepermission": 1,
+      "rightId": 24,
+      "grade": 2,
+      "id": 27
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "超级管理员",
+      "roleType": 1,
+      "rights": [
+        "/index/oa",
+        "/index/oa/home",
+        "/index/user-manage",
+        "/index/user-manage/add",
+        "/index/user-manage/delete",
+        "/index/user-manage/update",
+        "/index/user-manage/list",
+        "/index/right-manage",
+        "/index/right-manage/role/list",
+        "/index/right-manage/right/list",
+        "/index/right-manage/role/update",
+        "/index/right-manage/role/delete",
+        "/index/right-manage/right/update",
+        "/index/right-manage/right/delete",
+        "/index/news-manage",
+        "/index/news-manage/list",
+        "/index/news-manage/add",
+        "/index/news-manage/update/:id",
+        "/index/news-manage/preview/:id",
+        "/index/news-manage/draft",
+        "/index/news-manage/category",
+        "/index/audit-manage",
+        "/index/audit-manage/audit",
+        "/index/audit-manage/list",
+        "/index/publish-manage",
+        "/index/publish-manage/unpublished",
+        "/index/publish-manage/published",
+        "/index/publish-manage/sunset"
+      ]
+    },
+    {
+      "id": 2,
+      "roleName": "区域管理员",
+      "roleType": 2,
+      "rights": [
+        "/index/oa",
+        "/index/oa/home",
+        "/index/user-manage",
+        "/index/user-manage/add",
+        "/index/user-manage/delete",
+        "/index/user-manage/update",
+        "/index/user-manage/list",
+        "/index/news-manage",
+        "/index/news-manage/list",
+        "/index/news-manage/add",
+        "/index/news-manage/update/:id",
+        "/index/news-manage/preview/:id",
+        "/index/news-manage/draft",
+        "/index/news-manage/category",
+        "/index/audit-manage",
+        "/index/audit-manage/audit",
+        "/index/audit-manage/list",
+        "/index/publish-manage",
+        "/index/publish-manage/unpublished",
+        "/index/publish-manage/published",
+        "/index/publish-manage/sunset"
+      ]
+    },
+    {
+      "id": 3,
+      "roleName": "区域编辑",
+      "roleType": 3,
+      "rights": [
+        "/index/oa",
+        "/index/oa/home",
+        "/index/news-manage",
+        "/index/news-manage/list",
+        "/index/news-manage/add",
+        "/index/news-manage/update/:id",
+        "/index/news-manage/preview/:id",
+        "/index/news-manage/draft",
+        "/index/audit-manage",
+        "/index/audit-manage/list",
+        "/index/publish-manage",
+        "/index/publish-manage/unpublished",
+        "/index/publish-manage/published",
+        "/index/publish-manage/sunset"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "测试",
+      "categoryId": 1,
+      "content": "<p>测试</p>\n",
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "auditState": 2,
+      "publishState": 1,
+      "createTime": 1615780184222,
+      "star": 0,
+      "view": 0,
+      "id": 1
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 2,
+      "star": 0,
+      "view": 0,
+      "title": "千锋教育",
+      "categoryId": 1,
+      "content": "<h3 style=\"text-align:left;\">🎵我在千锋，我爱学习</h3>\n",
+      "createTime": 1647997752367,
+      "auditState": 2,
+      "id": 2,
+      "publishTime": 1648131098835
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 0,
+      "star": 0,
+      "view": 0,
+      "title": "温州刀马旦",
+      "categoryId": 1,
+      "content": "<p style=\"text-align:start;\"></p>\n<h1 style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 3.6rem;font-family: segoe ui bold\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">“温州刀马旦”回乡开直播受热捧：同事都去做口罩 希望能把戏曲传承下去</span></h1>\n<p style=\"margin-left:auto;\"></p>\n<p style=\"text-align:center;\"></p>\n<p style=\"margin-left:0px;\">&nbsp;</p>\n<p style=\"margin-left:0px;\"></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 1.4rem;font-family: segoe ui bold\", \"microsoft yahei bold\", \"microsoft yahei\", \"microsoft mhei bold\", stheititc, sans-serif;\">红星新闻</span>&nbsp;</p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 1.4rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">19 小时前</span></p>\n<p style=\"text-align:start;\"></p>\n<p style=\"margin-left:0px;\"></p>\n<p style=\"margin-left:0px;\"></p>\n<p style=\"margin-left:0px;\"></p>\n<img src=\"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAVnIww.img?h=140&w=140&m=6&q=60&u=t&o=t&l=f&x=139&y=419\" alt=\"\" style=\"height: 10rem;width: 10rem\"/>\n<p style=\"text-align:left;\"></p>\n<p style=\"text-align:left;\"><a href=\"https://pc.yiyouliao.com/msn/article.html?recId=33cd8711a16e48be8f2eae6c1c6c34d5_s&infoId=II01A0YV7R2PWHK&ocid=msedgntp\" target=\"_self\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 1.5rem;font-family: segoe ui bold\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">三代同框，也救不了史上最差蜘蛛侠电影？</span></a></p>\n<p style=\"margin-left:0px;\"></p>\n<p style=\"margin-left:0px;\"></p>\n<img src=\"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AANrPvV.img?h=140&w=140&m=6&q=60&u=t&o=t&l=f\" alt=\"\" style=\"height: 10rem;width: 10rem\"/>\n<p style=\"text-align:left;\"></p>\n<p style=\"text-align:left;\"><a href=\"https://www.msn.cn/zh-cn/news/national/%e5%af%bb%e6%89%be-%e9%bb%91%e5%8c%a3%e5%ad%90-%e6%9c%89%e9%bb%84%e9%87%91%e6%97%b6%e9%99%90%e5%90%97-%e5%9d%a0%e6%9c%ba%e8%88%aa%e7%8f%ad-%e9%bb%91%e5%8c%a3%e5%ad%90-%e6%9c%89%e5%8f%af%e8%83%bd%e8%a2%ab%e6%8d%9f%e5%9d%8f%e5%90%97-%e7%ba%a2%e6%98%9f%e6%96%b0%e9%97%bb5%e9%97%ae%e4%b8%93%e5%ae%b6/ar-AAVmsze?ocid=msedgntp\" target=\"_self\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 1.5rem;font-family: segoe ui bold\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">寻找“黑匣子”有黄金时限吗？坠机航班“黑匣子”有可能被损坏吗？红星新闻5问专家</span></a></p>\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">“耍花枪比谁都漂亮，刀马旦身段演出风靡全场。”刀马旦，是京剧里“旦”的角色之一，专演巾帼英雄，提刀骑马、武艺高强的女性。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">近日，直播平台上一位身着戏服、飞快耍着大刀的刀马旦登上热搜，引发关注。红星新闻了解到，这位网名“甄妮刀马旦”的演员本名甄淑梭，从事京剧表演已有38年，有“温州第一武旦”的美誉。2020年回到河北老家，不想改行的她开始在网上表演京剧功夫，意外收获众多粉丝，目前已有120万粉丝关注，获得过近2000万次点赞。</span></p>\n<img src=\"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAVlP5Y.img?h=560&w=515&m=6&q=60&o=f&l=f&x=75&y=264\" alt=\"\" style=\"height: 40rem;width: 37rem\"/>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">“甄妮刀马旦”网络截图</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">甄淑梭告诉红星新闻，在温州演出的时候，台下的观众都是一些老人，年轻人比较少。“可能是因为转刀的视频，好多大学生来到我的直播间说‘阿姨真棒’‘阿姨我好喜欢你’。他们还会给我刷礼物，我就跟他们说，千万别给我刷，你们还没有工作，你们来看看我就好了。我就想着今后以线上线下结合的形式继续传播戏曲文化，以后可以一边带孙子一边把咱们戏曲文化传承下去。”</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\"><strong>戏曲道路：“烂出骨头了还在忍着”</strong></span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">今年51岁的甄淑梭出身于河北保定一个普通的农村家庭。13岁那年，受到来当地曲艺团影响，对戏剧产生浓厚兴趣，进入当地曲艺学校。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);background-color: rgb(255,255,255);font-size: 2rem;font-family: segoe ui\", \"microsoft yahei\", \"microsoft mhei\", stheititc, sans-serif;\">“当时我们农村有演大戏的，有一些曲艺团会到我们村里演出。我比较迷恋其中的那个主角，后来她成了我的授业恩师，是她把我领进戏曲这道门的。”甄淑梭回忆，当年的曲艺学校条件很差，学员们睡觉都是大通铺，下面铺上稻草，哪怕是在三九寒冬，天天练功都会被汗水浸泡。</span>&nbsp;</p>\n",
+      "createTime": 1648000316445,
+      "auditState": 3,
+      "id": 3
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 3,
+      "star": 0,
+      "view": 0,
+      "title": "撒",
+      "categoryId": 1,
+      "content": "<p>俺睡撒</p>\n",
+      "createTime": 1648021945312,
+      "auditState": 2,
+      "id": 4,
+      "publishTime": 1648129267525
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 0,
+      "star": 0,
+      "view": 0,
+      "title": "专精特新",
+      "categoryId": 2,
+      "content": "<h3 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 18px;font-family: Microsoft YaHei\", 微软雅黑;\">各地培育支持政策密集发布——</span></h3>\n<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">为“专精特新”中小企业发展蓄势添能</span></h1>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">本报记者  王  政</span></p>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日05:04 | 来源：</span><a href=\"http://paper.people.com.cn/rmrb/html/2022-03/25/nw.D110000renmrb_20220325_1-01.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">人民网－人民日报</span></a></p>\n<p></p>\n<img src=\"http://finance.people.com.cn/img/2020wbc/imgs/icon_type.png\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:start;\"></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">北京冬奥会上，我国运动员配备的新型流线型短道速滑冰刀，不仅强度高，重量更是轻了20%以上；雪车项目运动员佩戴的头盔，在零摄氏度以下仍保持良好弹性和柔韧性……这些冬奥赛场上的亮点产品，采用的都是专精特新“小巨人”企业湖南华曙高科技股份有限公司的3D打印技术。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“去年，公司新增授权发明专利27项，同比增长31%，累计拥有发明专利100余项，自主知识产权拥有量居国内同行业领先水平。”华曙高科执行董事、副总经理程杰介绍，作为湖南省30家技术创新“破零倍增”典型企业之一，华曙高科突破增材制造领域系统软件技术难题，自主开发了全套工业级软件系统。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">湖南省引导专精特新“小巨人”企业开展技术创新“破零倍增”行动，只是上下联动、部门协同推进中小企业专精特新发展的一个缩影。2021年11月，国务院促进中小企业发展工作领导小组办公室印发《为“专精特新”中小企业办实事清单》《提升中小企业竞争力若干措施》，为“专精特新”中小企业发展壮大凝心聚力、蓄势添能。截至目前，全国累计19个省区市推出专项政策支持“专精特新”中小企业发展，资金支持超40亿元。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\"><strong>推动产业链上下游、大中小企业协同创新</strong></span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">走进安徽阜阳界首市吉祥三宝高科纺织有限公司，去年8月投产的自动化仿鹅绒结构高保暖絮片生产线正马力全开。“整条线规划年产絮片3600吨，今年的订单已经排到了年底。”公司副总经理马晓飞说。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">2021年，吉祥三宝公司牵手东华大学院士团队揭榜的攻关任务“熔喷保暖隔音材料”取得重大技术突破。新材料具有轻质保暖、高蓬松度、高回弹性、柔软舒适、可水洗可干洗等优点，在完全浸湿的条件下仍能保持98%的保暖率，打破了国外公司技术垄断，填补了国内空白。在北京冬奥会上，运动员、教练员以及保障人员身穿的保暖服填充物，就采用了该产品。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">改革重大科技项目立项和组织管理方式，让更多的“专精特新”中小企业参与“揭榜挂帅”，成为产业技术基础和共性技术研发的重要载体，是实施强链补链、推进企业专精特新发展的重要抓手之一。工业和信息化部统计显示，2021年，“专精特新”中小企业营收增速、利润率和发明专利成果占有量分别达到规上工业中小企业的2.2倍、1.4倍和3.4倍。围绕技术创新，一系列支持政策相继落地。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">——聚焦提升企业技术创新能力，山东省支持“专精特新”中小企业独立或联合设立研发机构，并建档入库重点支持。安徽省实施“产学研1+N”创新工程，支持“专精特新”中小企业与强院强校强所合作建立实验室，2022年计划实施重点产学研合作项目50个、“揭榜挂帅”任务100项以上。江西省对“专精特新”中小企业申报或牵头申报的科技研发、重大成果转化等创新类项目，同等条件下优先支持。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">——推动大中小企业融通创新。北京市围绕龙头企业薄弱环节，组织“专精特新”中小企业开展揭榜攻关和样机研发，支持“小巨人”企业围绕产业链布局开展并购重组，吸引上下游企业在京落地。河北省支持大型企业创新裂变、分拆孵化科技含量高的“专精特新”中小企业，打造细分领域的“小巨人”企业。山东省围绕“专精特新”中小企业分布集中的重点产业链，采取政府指导、平台承办、双向互动形式，常态化组织产业链“链主”与上下游“专精特新”中小企业供需见面、路演推介等系列活动。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">——培育壮大特色产业集群。北京市各区围绕主导产业方向和企业发展需求，优化产业和空间布局，做好土地供应保障，打造一批“专精特新”特色园区。吉林省加快孵化载体建设，在现有省级创业孵化基地内，遴选10个主导产业突出、创新能力强的孵化基地，作为省级“专精特新”产业孵化园。重庆市在新一代信息技术、新能源及智能网联汽车、高端装备等关键领域，重点培育10个市级重点关键产业园。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\"><strong>增信贷、拓渠道，扩大有效融资供给</strong></span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">模具，素有“工业之母”之称，是制造行业的核心技术，而纳米镀膜则相当于给模具穿上了“超能纳米外衣”，能将寿命提高十几倍。如今，这项长期被国外“卡脖子”的纳米膜层技术，被这家“专精特新”企业成功攻克。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“创新型中小企业离不开融资支持。省经信厅牵线搭桥让我们获得了国家中小企业发展基金的充分认可，并于去年成为该基金全国直接投资的第一个项目。”安徽纯源镀膜科技有限公司董事长张心凤说，解决了融资问题，让企业有更多精力投入到产品研发和技术创新上。如今，公司潜心投入开发的纯离子镀膜技术打破国外垄断，制造出的金属膜、合金膜、金属化合物膜和金刚石薄膜等，已经广泛应用在消费电子、半导体、交通工具、刀具模具、新能源、医疗等行业。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">畅通资金活水，加大“专精特新”中小企业融资支持，各地纷纷开启新的探索。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">——拓宽市场化融资渠道，2021年6月，海南省股权交易中心设立“专精特新板”，截至目前，已有123家企业在“专精特新板”挂牌培育，合计获得融资5119万元。北京市充分利用各级政府投资基金，重点支持“专精特新”中小企业发展。支持龙头企业围绕供应链上下游开展股权投资。鼓励社会资本与政府投资基金开展合作。广西壮族自治区支持“专精特新”中小企业开展信用类债券融资，按照自治区相关政策给予奖补。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">——增强信贷有效支持。为缓解“专精特新”等优质中小企业贷款难题，河北省对“小巨人”企业贴息标准上浮10%，支持市场化企业征信机构采集非信贷数据或替代数据，提供优惠征信服务。吉林省单独调配30亿元再贷款和20亿元再贴现额度，加大再贷款再贴现等货币政策工具的定向支持力度。安徽省持续开展“十行千亿万企”融资服务专项行动，2022年鼓励合作银行安排不少于4000亿元专项信贷资金，给予中小企业重点支持。</span>&nbsp;</p>\n",
+      "createTime": 1648189632611,
+      "auditState": 0,
+      "id": 5
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 2,
+      "star": 0,
+      "view": 20,
+      "title": "习近平向第四届中古两党理论研讨会致贺信",
+      "categoryId": 1,
+      "content": "<h1 style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 24px;font-family: 微软雅黑;\"><strong>习近平向第四届中古两党理论研讨会致贺信</strong></span></h1>\n<p style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 12px;font-family: 宋体;\">2022年03月24日08:22    来源：</span><a href=\"http://paper.people.com.cn/rmrb/html/2022-03/24/nw.D110000renmrb_20220324_1-01.htm\" target=\"_blank\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 12px;font-family: 宋体;\">人民网－人民日报</span></a></p>\n<p style=\"text-align:left;\"></p>\n<p style=\"margin-left:auto;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 18px;font-family: 微软雅黑;\">新华社北京3月23日电  3月23日，中共中央总书记、国家主席习近平向中国共产党和古巴共产党第四届理论研讨会致贺信。</span></p>\n<p style=\"margin-left:auto;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 18px;font-family: 微软雅黑;\">习近平表示，中国共产党和古巴共产党是各自国家社会主义事业的领导核心。中共十八大以来，中国共产党团结带领中国人民取得了改革开放和社会主义现代化建设的历史性成就，中国特色社会主义进入新时代。古共八大对当前和今后一个时期古巴党和国家事业发展作出战略规划和部署，为古巴建设繁荣、民主、可持续的社会主义擘画了蓝图。面对新形势新任务，中古两党以“加强党的建设，奋进新时代中古社会主义新征程”为主题进行理论研讨恰逢其时，对我们探索符合本国国情的社会主义发展道路具有重要意义。</span></p>\n<p style=\"margin-left:auto;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 18px;font-family: 微软雅黑;\">习近平强调，中国共产党愿同古巴共产党深入交流对重大理论和实践问题的看法，相互学习借鉴治国理政经验，推动各自党的建设和社会主义事业不断发展。</span></p>\n<p style=\"margin-left:auto;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 18px;font-family: 微软雅黑;\">第四届中古两党理论研讨会由中共中央对外联络部和古共中央国际关系部共同主办，于3月23日至24日以视频方式举行。</span></p>\n<p style=\"margin-left:auto;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 18px;font-family: 微软雅黑;\">《 人民日报 》（ 2022年03月24日 01 版）</span><br>&nbsp;</p>\n",
+      "createTime": 1648189706963,
+      "auditState": 2,
+      "id": 6,
+      "publishTime": 1648189978427
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 1,
+      "star": 0,
+      "view": 0,
+      "title": "国家卫健委",
+      "categoryId": 1,
+      "content": "<p style=\"text-align:center;\"></p>\n<h2 style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 30px;font-family: Microsoft YaHei;\">国家卫健委：3月24日新增新冠肺炎确诊病例1366例 其中本土病例1301例</span></h2>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">3月24日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例1366例。其中境外输入病例65例（广西23例，上海12例，广东11例，四川6例，北京5例，山西3例，吉林2例，江苏1例，浙江1例，福建1例），含11例由无症状感染者转为确诊病例（四川5例，广东3例，吉林2例，浙江1例）；本土病例1301例（吉林1110例，其中长春市576例、吉林市528例、四平市6例；上海27例，其中浦东新区10例、静安区8例、宝山区3例、徐汇区2例、普陀区2例、杨浦区1例、嘉定区1例；天津25例，其中西青区13例、河北区6例、河东区2例、红桥区1例、东丽区1例、北辰区1例、滨海新区1例；河北24例，其中廊坊市23例、定州市1例；黑龙江23例，均在哈尔滨市；江西23例，其中南昌市20例、九江市3例；福建17例，均在泉州市；山东13例，其中滨州市8例、济南市2例、威海市2例、青岛市1例；河南10例，其中周口市4例、漯河市3例、焦作市2例、开封市1例；辽宁9例，其中沈阳市3例、大连市2例、营口市2例、辽阳市1例、葫芦岛市1例；广东4例，其中深圳市2例、东莞市1例、中山市1例；甘肃4例，均在兰州市；浙江3例，其中杭州市1例、嘉兴市1例、衢州市1例；云南3例，其中德宏傣族景颇族自治州2例、临沧市1例；陕西3例，均在宝鸡市；安徽1例，在芜湖市；湖南1例，在长沙市；贵州1例，在黔东南苗族侗族自治州），含121例*由无症状感染者转为确诊病例（吉林91例*，江西15例，天津3例，辽宁3例，浙江3例，山东3例，福建1例，河南1例，广东1例）。无新增死亡病例。新增疑似病例5例，其中境外输入病例2例（均在上海），本土病例3例（均在上海）。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">当日新增治愈出院病例725例，解除医学观察的密切接触者21923人，重症病例与前一日持平。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">境外输入现有确诊病例1182例（其中重症病例1例），现有疑似病例13例。累计确诊病例17161例，累计治愈出院病例15977例，累计死亡病例0例。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">截至3月24日24时，据31个省（自治区、直辖市）和新疆生产建设兵团报告，现有确诊病例26892例（其中重症病例50例），累计治愈出院病例109119例，累计死亡病例4638例，累计报告确诊病例140651例，现有疑似病例16例。累计追踪到密切接触者2152648人，尚在医学观察的密切接触者371757人。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">31个省（自治区、直辖市）和新疆生产建设兵团报告新增无症状感染者3622例，其中境外输入133例，本土3489例（上海1582例，其中闵行区489例、浦东新区183例、徐汇区165例、嘉定区129例、黄浦区102例、松江区92例、宝山区84例、崇明区82例、静安区63例、长宁区59例、普陀区36例、虹口区29例、奉贤区24例、杨浦区20例、青浦区13例、金山区12例；吉林900例，其中吉林市608例、长春市290例、延边朝鲜族自治州2例；河北288例，其中廊坊市229例、唐山市59例；辽宁180例，其中沈阳市95例、营口市50例、大连市31例、锦州市2例、辽阳市2例；福建153例，其中泉州市151例、福州市1例、漳州市1例；山东140例，其中滨州市124例、青岛市4例、淄博市3例、潍坊市3例、烟台市2例、临沂市2例、威海市1例、聊城市1例；江西61例，其中南昌市56例、宜春市3例、九江市1例、上饶市1例；天津42例，其中西青区21例、河北区11例、东丽区5例、静海区3例、南开区1例、滨海新区1例；甘肃29例，其中兰州市25例、天水市3例、临夏回族自治州1例；江苏25例，其中常州市14例、苏州市5例、南通市3例、南京市2例、盐城市1例；安徽24例，其中铜陵市19例、合肥市2例、芜湖市2例、安庆市1例；广西17例，其中防城港市12例、钦州市2例、贵港市2例、崇左市1例；云南15例，其中德宏傣族景颇族自治州13例、临沧市2例；黑龙江13例，其中哈尔滨市12例、黑河市1例；河南12例，其中焦作市5例、周口市5例、安阳市1例、漯河市1例；广东7例，其中东莞市6例、深圳市1例；浙江1例，在衢州市）；当日转为确诊病例132例（境外输入11例）；当日解除医学观察507例（境外输入165例）；尚在医学观察的无症状感染者27046例*（境外输入1455例）。</span></p>\n<p style=\"margin-left:0px;\"><span style=\"color: rgb(51,51,51);font-size: 18px;font-family: Verdana, \"Microsoft YaHei\", sans-serif;\">累计收到港澳台地区通报确诊病例304418例。其中，香港特别行政区282009例（出院38964例，死亡6770例），澳门特别行政区82例（出院80例），台湾地区22327例（出院13742例，死亡853例）。</span>&nbsp;</p>\n",
+      "createTime": 1648189766755,
+      "auditState": 2,
+      "id": 7
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 2,
+      "star": 24,
+      "view": 29,
+      "title": "2月我国债券市场发行超4.4万亿元",
+      "categoryId": 6,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">2月我国债券市场发行超4.4万亿元</span></h1>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日05:10 | 来源：</span><a href=\"http://paper.people.com.cn/rmrb/html/2022-03/25/nw.D110000renmrb_20220325_5-07.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">人民网－人民日报</span></a></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　本报北京3月24日电  （记者吴秋余）中国人民银行发布的最新数据显示，2月份，我国债券市场共发行各类债券44307.7亿元。其中，国债发行4800.0亿元，地方政府债券发行5071.0亿元，金融债券发行7240.5亿元，公司信用类债券发行7518.4亿元，信贷资产支持证券发行45.0亿元，同业存单发行19366.1亿元。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　截至2月末，我国债券市场托管余额为136.3万亿元。其中，国债托管余额22.4万亿元，地方政府债券托管余额31.3万亿元，金融债券托管余额31.9万亿元，公司信用类债券托管余额31.6万亿元，信贷资产支持证券托管余额2.6万亿元，同业存单托管余额14.5万亿元。商业银行柜台债券托管余额457.6亿元。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　2月份，银行间债券市场现券成交17.3万亿元，日均成交10825.0亿元，同比增加69.0%，环比增加8.8%；银行间货币市场成交共计88.7万亿元，同比增加45.9%，环比减少20.5%。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　截至2月末，境外机构在中国债券市场的托管余额为4.1万亿元，占中国债券市场托管余额的比重为3.0%。其中，境外机构在银行间债券市场的托管余额为4.0万亿元。分券种看，境外机构持有国债2.5万亿元、占比62.3%，政策性金融债1.1万亿元、占比26.4%。</span>&nbsp;</p>\n",
+      "createTime": 1648189813595,
+      "auditState": 2,
+      "id": 8,
+      "publishTime": 1648189906130
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 2,
+      "star": 0,
+      "view": 0,
+      "title": "北京持续降春雪 民众雪中观景",
+      "categoryId": 6,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">北京持续降春雪 民众雪中观景</span></h1>\n<p style=\"text-align:justify;\"></p>\n<img src=\"http://finance.people.com.cn/mediafile/pic/20220319/84/18170371713495482920.jpg\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　3月18日，雪中的北京故宫博物院。当日，北京持续降雪降温。 中新社记者 田雨昊 摄</span>&nbsp;</p>\n",
+      "createTime": 1648189878434,
+      "auditState": 2,
+      "id": 9,
+      "publishTime": 1648189904746
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 0,
+      "star": 0,
+      "view": 0,
+      "title": "基因编辑人工智能等科研有了“红线”和“底线”",
+      "categoryId": 3,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">基因编辑人工智能等科研有了“红线”和“底线”</span></h1>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">新华社北京3月24日电（记者胡喆、田晓航、张泉、温竞华）基因编辑、人工智能觉醒、异种器官移植、个人网络信息安全……科学技术不断迅猛发展的同时，也给社会带来新的风险和不确定性，同时可能引发一些前所未有的伦理挑战。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">中办、国办近日印发《关于加强科技伦理治理的意见》，这是我国首个国家层面的科技伦理治理指导性文件，也是继国家科技伦理委员会成立之后，我国科技伦理治理的又一标志性事件。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\"><strong>目的：防范不确定风险，促进科技向善</strong></span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">此次两办印发的意见不仅提出了“伦理先行、依法依规、敏捷治理、立足国情、开放合作”的科技伦理治理要求，更明确了“增进人类福祉、尊重生命权利、坚持公平公正、合理控制风险、保持公开透明”的科技伦理原则。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">科技伦理是科技活动必须遵守的价值准则。当前，我国科技创新快速发展，面临的科技伦理挑战日益增多，但科技伦理治理仍存在体制机制不健全、制度不完善、领域发展不均衡等问题，难以适应科技创新发展的现实需要，构建覆盖全面、导向明确、规范有序、协调一致的科技伦理治理体系成为当务之急。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">科技部副部长相里斌在23日召开的《关于加强科技伦理治理的意见》新闻发布会上介绍：“意见起草过程中，我们着重把握了以下几个方面，一是确立价值理念，彰显我国对加强科技伦理治理的立场和态度；二是突出问题导向，着力解决我国科技伦理治理体制机制不健全、制度不完善、领域发展不均衡等问题；三是强化系统部署，提出加强科技伦理治理的重大举措。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“意见首次对我国科技伦理治理工作作出系统部署，具有重大指导意义，有助于推动科技界和全社会统一思想，凝聚共识，进一步提升对科技伦理治理重要性的认识，有效防范科技伦理风险，对推动科技向善，实现高水平科技自立自强，加快建设创新型国家和科技强国将发挥重要作用。”相里斌说。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\"><strong>重点领域：生命科学、医学、人工智能等</strong></span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">近年来，基因编辑技术、人工智能技术、辅助生殖技术等前沿科技迅猛发展，在给人类带来福祉的同时，也不断挑战人类的伦理底线和价值尺度。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">科技创新必须伦理先行。著名科学家爱因斯坦曾坦言：“科学是一种强有力的工具，怎样用它，究竟是给人带来幸福还是带来灾难，全取决于人自己，而不取决于工具。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">加强科技伦理制度化建设，推动科技伦理全球治理，成为全社会的共同呼声。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">此次印发的意见提出：“研究内容涉及科技伦理敏感领域的，应设立科技伦理（审查）委员会”“重点加强生命科学、医学、人工智能等领域的科技伦理立法研究”“严肃查处科技伦理违法违规行为”……</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">有科技伦理学专家表示，随着越来越多中国科技工作者勇闯“无人区”，我们需要预判科技创新可能带来的伦理风险，系统地预见、权衡和处置科技前沿的伦理冲突，谨防有人不小心冲进伦理“禁区”。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\"><strong>完善审查监管机制：划定“红线”和“底线”</strong></span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“任何单位、组织和个人开展科技活动不得危害社会安全、公共安全、生物安全和生态安全，不得侵害人的生命安全、身心健康、人格尊严，不得侵犯科技活动参与者的知情权和选择权，不得资助违背科技伦理要求的科技活动。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">此次印发的意见为加强科技伦理治理划定了“红线”和“底线”。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“增进人类的福祉是科技发展的原动力，而科技伦理的目标就是捍卫科学共同体沿着这样的轨道往前发展，在价值判断的维度来保障科技的发展方向。”国家科技伦理委员会委员翟晓梅说。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">审查、监管机制的完善是建立国家科技伦理治理体系的重要一环。对此，文件对科技伦理审查、监管、风险预警、违规处理等作出具体规定，要求开展科技活动应进行科技伦理风险评估或审查，并特别针对涉及人、实验动物的科技活动作出规定；要求完善科技伦理风险监测预警机制等。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">针对一些科技伦理问题倾向于内部解决、惩罚性措施不够完善的问题，文件明确，要严肃查处科技伦理违法违规行为。高等学校、科研机构、医疗卫生机构、企业等是科技伦理违规行为单位内部调查处理的第一责任主体，对情节严重的科技伦理违规行为依法依规严肃追责问责。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">科技部科技监督与诚信建设司司长戴国庆表示，在实际执行过程中，相关行业主管部门、资助机构或责任人所在单位要区分不同情况，依法依规对科技伦理违规行为责任人给予责令改正，停止相关科技活动，追回资助资金，撤销获得的奖励、荣誉，取消相关从业资格，禁止一定期限内承担或参与财政性资金支持的科技活动等处理。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">“我们必须要全面、审慎地思考现代前沿新兴技术的功能，比如意见指出要以具有前瞻性、负责任和审慎的立场对待新技术，尤其是可能产生重大影响、极具争议的技术广泛应用时更是如此。”翟晓梅说。</span>&nbsp;</p>\n",
+      "createTime": 1648189970802,
+      "auditState": 1,
+      "id": 10
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 0,
+      "star": 0,
+      "view": 0,
+      "title": "南部战区海军某登陆舰大队开展实战化训练",
+      "categoryId": 4,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">南部战区海军某登陆舰大队开展实战化训练</span></h1>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日09:50 | 来源：</span><a href=\"http://www.81.cn/jfjbmap/content/2022-03/25/content_312164.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">解放军报</span></a></p>\n<p></p>\n<img src=\"http://military.people.com.cn/NMediaFile/2022/0325/MAIN202203250950000000685279249.jpg\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">栗嘉摄</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">3月22日，南部战区海军某登陆舰大队开展实战化训练。</span>&nbsp;</p>\n",
+      "createTime": 1648190066300,
+      "auditState": 1,
+      "id": 11
+    },
+    {
+      "region": "全球",
+      "author": "admin",
+      "roleId": 1,
+      "publishState": 1,
+      "star": 0,
+      "view": 0,
+      "title": "中职篮季后赛4月1日揭幕",
+      "categoryId": 5,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">中职篮季后赛4月1日揭幕</span></h1>\n<h4 style=\"text-align:start;\"><span style=\"color: rgb(153,153,153);font-size: 18px;font-family: Microsoft YaHei\", 微软雅黑;\">分4阶段进行  12支球队参与</span></h4>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日05:13 | 来源：</span><a href=\"http://paper.people.com.cn/rmrb/html/2022-03/25/nw.D110000renmrb_20220325_1-12.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">人民网－人民日报</span></a></p>\n<p style=\"text-align:center;\"></p>\n<img src=\"http://paper.people.com.cn/rmrb/images/1/20220325/1648151760006_1.jpg\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　3月22日，辽宁队球员赵继伟（上）在比赛中传球，本场比赛，辽宁队以134∶90战胜四川队。当日，本赛季CBA常规赛落幕，辽宁队获得常规赛冠军。</span><br><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　新华社记者 王乙杰摄</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　本报北京3月24日电  （记者范佳元）3月24日，2021—2022赛季CBA（中国男子篮球职业联赛）季后赛赛程赛制及第一阶段（12进8）竞赛日程发布。本赛季CBA常规赛于3月22日落幕，辽宁队获得常规赛冠军，12支球队进入季后赛。季后赛将于4月1日起在江西南昌举行，分4个阶段进行。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　经过常规赛38轮较量，辽宁队以32胜6负排名第一，这是球队继2015—2016赛季之后第二次获得常规赛冠军。广厦队以31胜7负位列第二，上海队和浙江队分别获得第三名和第四名。常规赛第五名至第十二名的球队分别是：广东队、深圳队、北京队、广州队、山西队、吉林队、山东队、天津队。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　根据赛程安排，本赛季CBA季后赛第一阶段比赛4月1日至6日进行，由第五名至第十二名球队捉对较量，采取三战两胜制，胜者与常规赛前四名球队进行第二阶段比赛。第二阶段为1/4决赛，4月7日至12日进行，采取三战两胜制。第三阶段为半决赛，4月13日至22日进行，采取五战三胜制。第四阶段为总决赛，4月24日至5月7日进行，采取七战四胜制，胜者为本赛季CBA总冠军。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　3月开始的常规赛第三阶段，辽宁队状态出现起伏，赛季6场失利有3场都发生在该阶段。主教练杨鸣说：“常规赛3个阶段，各队不同时间段有不同的困难，我们第二阶段打得最好，但是在第三阶段开局没有做好。我们争取在季后赛打出更好状态，把过程做好。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　广厦队在第三阶段的10场比赛中取胜9场。3名主力球员胡金秋、孙铭徽、赵岩昊的发挥愈发稳健，外援奥卡福的加入让全队内外线更加均衡，整体实力上升了一个档次。“我们取得了不错的名次，但问题也很明显，控制失误、篮板球以及个人防守等方面都还有提高空间。”主教练王博说。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　广东队本赛季常规赛成绩仅排在第五位，这也是他们继2001—2002赛季以来首次无缘常规赛前四。本赛季广东队遭遇较多伤病问题，导致阵容不整和状态起伏。过去3个赛季，广东队都是常规赛冠军并最终夺得总冠军。进入季后赛，广东队首先要在第一阶段比赛中与天津队交手，因其所在的半区，还有可能先后遭遇浙江队和辽宁队。</span>&nbsp;</p>\n",
+      "createTime": 1648190166722,
+      "auditState": 2,
+      "id": 12
+    },
+    {
+      "region": "欧洲",
+      "author": "dabai",
+      "roleId": 2,
+      "publishState": 2,
+      "star": 0,
+      "view": 0,
+      "title": "吕小军：奇迹来自一如既往的努力",
+      "categoryId": 5,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">吕小军：奇迹来自一如既往的努力</span></h1>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日08:55 | 来源：</span><a href=\"https://epaper.gmw.cn/gmrb/html/2022-03/25/nw.D110000gmrb_20220325_2-09.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">光明日报</span></a><img src=\"http://ent.people.com.cn/img/2020wbc/imgs/icon_type.png\" alt=\"\" style=\"height: ;width: \"/></p>\n<p></p>\n<p><span style=\"color: rgb(0,0,0);font-size: 14px;font-family: Microsoft YaHei\", 微软雅黑;\">原标题：吕小军：奇迹来自一如既往的努力</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">3月23日，国际体育仲裁法庭通过官网发布公告称，由于哈萨克斯坦举重运动员拉希莫夫违反相关反兴奋剂规定，他在2016年3月15日至2021年1月18日期间的所有奖牌、分数和奖品将被收回。这意味着，在2016年里约奥运会上获得男子举重77公斤级银牌的中国选手吕小军将递补获得金牌，从而实现奥运会三连冠。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">2009年11月，吕小军获得第77届世界举重锦标赛男子77公斤级冠军，并打破世界纪录。2012年伦敦奥运会男子77公斤级比赛总成绩打破世界纪录夺得冠军；2016年8月，在里约奥运会举重男子77公斤级决赛中，吕小军在抓举第3把成功举起了177公斤，打破了该级别世界纪录；在挺举阶段，抓举落后吕小军12公斤的哈萨克斯坦选手拉希莫夫，在挺举阶段挑战214公斤,虽然没站稳，但他依旧获得三盏白灯，由此打破挺举世界纪录，并凭借体重优势逆转夺金。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">对于六年前发生在赛场上的一切，今年已经37岁的吕小军至今仍然记得自己在新闻发布会的感言：“我当时在发布会上为拉希莫夫夺金点赞，但是我说了，到了东京奥运会要和他再较量一番。我输得不甘心。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">里约奥运会后，不服气也不服输的吕小军取消了原本要退役的决定，决定再拼一届奥运会，他义无反顾地投入东京奥运会的备战之中，即使遭遇疫情导致奥运会延期，面对种种困难，他都没有丝毫的动摇和退却。他说：“就是这件事让我坚定，我一定要再坚持一届奥运会。”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">2021年7月31日，吕小军夺得2020年东京奥运会举重男子81公斤级金牌。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">当他获知自己将递补获得里约奥运会的冠军，从而成为奥运史上“三连冠”得主时，他在个人社交媒体上表示：“谢谢大家的关心与祝福！目前还在等国际奥委会和国际举联的官方消息，也要感谢我们中国举协一直对这件事情的关注。希望大家继续关注中国举重，奇迹来自一如既往的努力，中国举重，加油！”</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">在接受记者的采访时，吕小军对于能否坚持到2024年巴黎奥运会并没有明确表示。他说：“我对巴黎奥运会有信心，但是我知道这将是很艰难的准备过程。”不过，他坦言，国际体育仲裁法庭的这则公告已经改变了他原本的规划，也许奥运四连冠将成为他的新目标。“在一切变得清晰之前，我不想轻易承诺什么。但是可以肯定的是，我现在热切盼望回归国家队。”吕小军说。</span>&nbsp;</p>\n",
+      "createTime": 1648190258786,
+      "auditState": 2,
+      "id": 13,
+      "publishTime": 1648190273746
+    },
+    {
+      "region": "欧洲",
+      "author": "dabai",
+      "roleId": 2,
+      "publishState": 2,
+      "star": 0,
+      "view": 0,
+      "title": "“天问一号”传回火星巡视区高分辨率影像",
+      "categoryId": 3,
+      "content": "<h1 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);font-size: 38px;font-family: Microsoft YaHei\", 微软雅黑;\">“天问一号”传回火星巡视区高分辨率影像</span></h1>\n<p style=\"text-align:start;\"></p>\n<p><span style=\"color: rgb(102,102,102);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">2022年03月25日05:04 | 来源：</span><a href=\"http://paper.people.com.cn/rmrb/html/2022-03/25/nw.D110000renmrb_20220325_6-01.htm\" target=\"_blank\"><span style=\"color: rgb(33,33,33);font-size: 16px;font-family: Microsoft YaHei\", 微软雅黑;\">人民网－人民日报</span></a></p>\n<p></p>\n<img src=\"http://finance.people.com.cn/img/2020wbc/imgs/icon_type.png\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:start;\"></p>\n<p style=\"text-align:center;\"></p>\n<img src=\"http://paper.people.com.cn/rmrb/images/2022-03/25/01/rmrb2022032501p30_b.jpg\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　日前，“天问一号”环绕器近火点经过火星车巡视区域上空，拍摄了“祝融号”巡视区0.5米分辨率影像图。</span><br><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　国家航天局供图</span></p>\n<img src=\"http://paper.people.com.cn/rmrb/images/2022-03/25/01/rmrb2022032501p29_b.jpg\" alt=\"\" style=\"height: ;width: \"/>\n<p style=\"text-align:center;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　2022年1月22日（着陆后第247个火星日），“祝融号”火星车表面存在明显的沙尘覆盖。</span><br><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　国家航天局供图</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　本报北京3月24日电  （记者冯华）记者从国家航天局获悉：截至2022年3月24日，“祝融号”火星车在火星表面工作306个火星日，累计行驶1784米，“天问一号”环绕器在轨运行609天，距离地球2.77亿千米，当前两器运行正常。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　日前“天问一号”环绕器近火点再次经过火星车巡视区域上空，拍摄了“祝融号”巡视区0.5米分辨率影像图，该影像图中“祝融号”火星车行驶路线清晰可辨。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　“祝融号”火星车也从火星表面传回自拍照，相比刚刚着陆时拍的照片，可以看出火星车表面已积累了一层薄薄的沙尘。为了应对沙尘覆盖，火星车太阳翼进行了特殊设计，可采取多种措施应对沙尘引起的发电效率下降问题，目前尚无需使用，当前能源状态足以支持火星车继续行驶并开展探测。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　火星北半球已经开始进入秋季。根据以往的探测资料分析，秋季是火星沙尘天气多发季节，但目前在“祝融号”巡视区尚未观察到明显的沙尘天气。</span></p>\n<p style=\"text-align:justify;\"><span style=\"color: rgb(0,0,0);font-size: 20px;font-family: Microsoft YaHei\", 微软雅黑;\">　　“天问一号”环绕器持续开展火星全球遥感探测，并重点关注陨石坑、火山、峡谷、干涸河床等典型地貌和地质单元，获取其高分辨率影像。</span>&nbsp;</p>\n",
+      "createTime": 1648190316250,
+      "auditState": 2,
+      "id": 14,
+      "publishTime": 1648190341290
+    }
+  ],
+  "categories": [
+    {
+      "title": "时事新闻",
+      "value": "时事新闻",
+      "id": 1
+    },
+    {
+      "title": "环球经济",
+      "value": "环球经济",
+      "id": 2
+    },
+    {
+      "title": "科学技术",
+      "value": "科学技术",
+      "id": 3
+    },
+    {
+      "title": "军事世界",
+      "value": "军事世界",
+      "id": 4
+    },
+    {
+      "title": "世界体育",
+      "value": "世界体育",
+      "id": 5
+    },
+    {
+      "title": "生活理财",
+      "value": "生活理财",
+      "id": 6
+    }
+  ]
+}
